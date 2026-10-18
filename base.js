@@ -265,10 +265,123 @@
 
 // Твій код тут
 
-function showWelcome() {
-  console.log("Welcome to SmileCare!");
-}
+// function showWelcome() {
+//   console.log("Welcome to SmileCare!");
+// }
 
-showWelcome();
-showWelcome();
-showWelcome();
+// showWelcome();
+// showWelcome();
+// showWelcome();
+
+//12---------------------------------------------------------
+/*
+ * Кавʼярні Sunny Coffee потрібна функція, що показує позицію замовлення.
+ * 1. Оголоси функцію showOrder з двома параметрами: coffeeName і quantity.
+ * 2. У тілі функції виведи в консоль рядок у форматі:
+ *    <coffeeName> x<quantity>
+ *    наприклад: Latte x2
+ * 3. Виклич функцію showOrder двічі з різними аргументами.
+ */
+
+// Твій код тут
+
+// function showOrder(coffeeName, quantity) {
+//   console.log(`${coffeeName} x${quantity}`);
+// }
+
+// showOrder("Cappuccino", 3);
+// showOrder("Espresso", 2);
+
+//13----------------------------------------------------------
+/*
+ * Клініці SmileCare потрібна функція, що рахує вартість послуги.
+ * 1. Оголоси функцію getServiceCost з двома параметрами:
+ *    pricePerVisit і visitsCount.
+ * 2. Функція має повертати (return) добуток pricePerVisit на visitsCount.
+ * 3. Виклич функцію та збережи результат у змінну totalCost.
+ * 4. Виведи в консоль повідомлення у форматі: Total cost: <totalCost> UAH
+ */
+
+// Твій код тут
+
+// function getServiceCost(pricePerVisit, visitsCount) {
+//   return pricePerVisit * visitsCount;
+// }
+
+// const totalCost = getServiceCost(500, 4);
+// console.log(`Total cost: ${totalCost} UAH`);
+
+//14----------------------------------------------------------
+/*
+ * Функція makeMessage складає повідомлення про покупку.
+ * Параметри задаються під час виклику:
+ * - name — назва товару;
+ * - price — ціна товару.
+ * Доповни функцію так, щоб вона повертала рядок у форматі:
+ * You picked <name>, price per item is <price> credits
+ */
+
+// Твій код тут
+
+// function makeMessage(name, price) {
+//   return `You picked ${name}, price per item is ${price} credits`;
+// }
+
+// console.log(makeMessage("Radar", 6150)); // You picked Radar, price per item is 6150 credits
+// console.log(makeMessage("Scanner", 3500)); // You picked Scanner, price per item is 3500 credits
+// console.log(makeMessage("Reactor", 8000)); // You picked Reactor, price per item is 8000 credits
+// console.log(makeMessage("Engine", 4070)); // You picked Engine, price per item is 4070 credits
+
+//15--------------------------------------------------------------------
+/*
+ * Кавʼярні Sunny Coffee потрібна функція, що збирає рядок-чек для позиції замовлення.
+ * Напиши функцію makeReceiptLine з трьома параметрами:
+ * - drinkName — назва напою;
+ * - cupsCount — кількість порцій;
+ * - pricePerCup — ціна однієї порції.
+ * Функція має повертати (return) шаблонний рядок такого формату
+ * (замість позначок у дужках підстав відповідні значення):
+ *   [назва] x[кількість] — [ціна] UAH each, [сума] UAH total
+ * де [сума] — це кількість, помножена на ціну однієї порції.
+ * Приклад результату для "Latte", 2, 60:
+ *   Latte x2 — 60 UAH each, 120 UAH total
+ */
+
+// Твій код тут
+
+// function makeReceiptLine(drinkName, cupsCount, pricePerCup) {
+//   const total = pricePerCup * cupsCount;
+//   return `${drinkName} x${cupsCount} — ${pricePerCup} UAH each, ${total} UAH total`;
+// }
+
+// console.log(makeReceiptLine("Latte", 2, 60)); // Latte x2 — 60 UAH each, 120 UAH total
+// console.log(makeReceiptLine("Espresso", 3, 45)); // Espresso x3 — 45 UAH each, 135 UAH total
+// console.log(makeReceiptLine("Cappuccino", 1, 55)); // Cappuccino x1 — 55 UAH each, 55 UAH total
+
+//16--------------------------------------------------------------------------
+/*
+ * У піцерії Pizza Time акція: із трьох піц найдешевша йде безкоштовно.
+ * Напиши функцію priceToPay з трьома параметрами — цінами трьох піц:
+ * - firstPizza;
+ * - secondPizza;
+ * - thirdPizza.
+ * Що має зробити функція:
+ * 1. Порахувати повну суму трьох піц.
+ * 2. Знайти найдешевшу з трьох цін через Math.min.
+ * 3. Відняти найдешевшу від суми — це й буде ціна до сплати.
+ * 4. Повернути (return) отримане значення.
+ * Приклад: для 180, 220, 150 сума 550, найдешевша 150, до сплати 400.
+ */
+
+// Твій код тут
+
+// function priceToPay(firstPizza, secondPizza, thirdPizza) {
+//   const totalPrice = firstPizza + secondPizza + thirdPizza;
+//   const cheapestPizza = Math.min(firstPizza, secondPizza, thirdPizza);
+//   const finalPrice = totalPrice - cheapestPizza;
+//   return finalPrice;
+// }
+
+// console.log(priceToPay(180, 220, 150)); // 400
+// console.log(priceToPay(200, 200, 260)); // 460
+// console.log(priceToPay(175, 190, 210)); // 400
